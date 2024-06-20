@@ -22,3 +22,13 @@ git clone https://github.com/ThomasCode92/hello-fyne
 cd hello-fyne     # navigate into project folder
 go run .          # start the program
 ```
+
+To run the tests, use the command `go test -v .`.
+
+### Build the application
+
+Ensure the _fyne command_ installed before compiling and building the application. When using _asdf_, reshim golang after the installation. To install the fyne command, use this command:<br />
+`go install fyne.io/fyne/v2/cmd/fyne@latest`.
+
+Then, to build the application for your operating system, run:<br />
+`fyne package -appVersion 1.0.0 -name Fyne-MD -release`.
